@@ -1,0 +1,18 @@
+* {
+	font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+	padding: 0 5vw;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+.game__board {
+	padding: 0;
+	margin: auto;
+	display: block;
+	background-color: #668c95;
+}
