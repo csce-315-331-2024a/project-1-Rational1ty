@@ -1,9 +1,29 @@
+:root {
+	--dark-blue: #213A52;
+}
+
 body {
 	background-color: #EDEDED;
 	margin: 0 auto;
 }
 
 .navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1vh 25vw;
+	border-top: 3px solid var(--dark-blue);
+	border-bottom: 3px solid var(--dark-blue);
+	margin-top: 2vh;
+}
+
+.navbar__link {
 	font-family: system-ui, Helvetica, Arial, sans-serif;
-	border: thin solid black;
+	text-transform: uppercase;
+	color: black;
+}
+
+/* Homepage styles */
+.intro__name {
+	font-size: 3em;
 }
