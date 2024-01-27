@@ -1,9 +1,17 @@
+/* DEBUG ONLY */
+*:hover {
+	border: 2px solid red;
+}
+
 :root {
+	--off-white: #EDEDED;
 	--dark-blue: #213A52;
+	--sans-font: 'Inter', system-ui, Helvetica, Arial, sans-serif;
+	--mono-font: 'Inconsolata', 'Consolas', monospace;
 }
 
 body {
-	background-color: #EDEDED;
+	background-color: var(--off-white);
 	margin: 0 auto;
 }
 
@@ -18,12 +26,122 @@ body {
 }
 
 .navbar__link {
-	font-family: system-ui, Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
+	font-family: var(--sans-font);
+	font-size: 0.9em;
 	color: black;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
 /* Homepage styles */
-.intro__name {
-	font-size: 3em;
+
+.home {
+	display: grid;
+	gap: 5vw;
+	grid-template-columns: 2fr 1fr;
+	justify-items: center;
+	margin: 5vh 20vw;
 }
+
+.intro {
+	grid-column: 1;
+}
+
+.intro__name {
+	font-family: var(--sans-font);
+	font-size: 2em;
+	color: var(--dark-blue);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.intro__text {
+	font-family: var(--mono-font);
+}
+
+.embark {
+	background-color: var(--dark-blue);
+	max-width: 15em;
+	min-width: 10em;
+	min-height: 4em;
+	width: 40%;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 3fr 1fr;
+	padding: 0.3em 0.5em;
+	border: thin solid black;
+	transition: all 0.2s ease;
+}
+
+/* TODO: change this to only a color change (no motion) */
+.embark:hover {
+	transform: translate(2px, -2px);
+	box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.7);
+	transition: all 0.2s ease;
+}
+
+.embark__text {
+	font-family: var(--mono-font);
+	color: var(--off-white);
+	padding: 0;
+	margin: 0;
+}
+
+.embark__arrow {
+	color: var(--off-white);
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+
+.info {
+	grid-column: 2;
+	width: 100%;
+}
+
+.info__headshot {
+	display: grid;
+	justify-items: center;
+	border-radius: 50%;
+	overflow: hidden;
+	min-width: 50px;
+	min-height: 50px;
+	max-width: 300px;
+	max-height: 300px;
+	width: 20vw;
+	height: 20vw;
+}
+
+.info__img {
+	width: 100%;
+	height: 140%;
+	object-fit: cover;
+}
+
+.info__contact {
+	display: grid;
+	gap: 0.5em;
+	place-items: center;
+	margin-top: 1em;
+}
+
+.info__link {
+	font-family: var(--mono-font);
+	color: black;
+	font-style: normal;
+}
+
+/* Resume page styles */
+
+
+
+/* Portfolio page styles */
+
+
+
+/* Service page styles */
+
+
+
+/* AI page styles */
