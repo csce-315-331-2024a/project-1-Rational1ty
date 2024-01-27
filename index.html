@@ -3,23 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="styles/style.css" type="text/css">
+	<link rel="stylesheet" href="styles/style1.css" type="text/css">
 	<title>Matthew Davidson - Homepage</title>
 </head>
 <body>
-	<h1>Matthew Davidson</h1>
-	<div class="content">
-		<main>
-			<p>
-				Howdy! I am a junior majoring in computer engineering at Texas A&M. 
-			</p>
-		</main>
-		<nav>
-			<a href="resume.html">Resume</a>
-			<a href="portfolio.html">Portfolio</a>
-			<a href="service.html">Service</a>
-			<a href="ai.html">AI</a>
-		</nav>
+	<nav class="navbar">
+		<a href="resume.html" class="navbar__link">Resume</a>
+		<a href="portfolio.html" class="navbar__link">Portfolio</a>
+		<a href="service.html" class="navbar__link">Service</a>
+		<a href="ai.html" class="navbar__link">AI</a>
+	</nav>
+
+	<main class="intro">
+		<h1 class="intro__name">Matthew Davidson</h1>
+		<p class="intro__text">
+			Howdy! I am a junior majoring in computer engineering at Texas A&M.
+			My interests include programming, RF circuits, and rockets. In my
+			free time, I enjoy playing the piano.
+		</p>
+		<p class="intro__text">
+			This is a longer description etc etc
+		</p>
+		<button onclick="location.assign('portfolio.html')" class="btn">
+			<p class="btn__text">Check out some of my projects</p>
+			<p class="btn__arrow">&rightarrow;</p>
+		</button>
+	</main>
+
+	<div class="info" role="">
+		<img src="" alt="Picture of me" class="info__img">
+		<address class="contact">
+			<a href="mailto:mdavidson@tamu.edu" class="contact__link">mdavidson@tamu.edu</a>
+			<a href="..." class="contact__link">GitHub</a>
+			<a href="..." class="contact__link">LinkedIn</a>
+		</address>
 	</div>
 </body>
 </html>
