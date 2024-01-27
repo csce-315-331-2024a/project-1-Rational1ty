@@ -1,1 +1,9 @@
+body {
+	background-color: #EDEDED;
+	margin: 0 auto;
+}
 
+.navbar {
+	font-family: system-ui, Helvetica, Arial, sans-serif;
+	border: thin solid black;
+}
