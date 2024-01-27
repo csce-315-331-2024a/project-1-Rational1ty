@@ -3,9 +3,40 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style1.css" type="text/css">
 	<title>Matthew Davidson - Resume</title>
 </head>
-<body>
+<embed>
+	<nav class="navbar">
+		<a href="index.html" class="navbar__link">Home</a>
+		<a href="resume.html" class="navbar__link">Resume</a>
+		<a href="portfolio.html" class="navbar__link">Portfolio</a>
+		<a href="service.html" class="navbar__link">Service</a>
+		<a href="ai.html" class="navbar__link">AI</a>
+	</nav>
 	
+	<main class="qualifications">
+		<!-- TODO: test this on mobile and maybe change to an img with a download link for the pdf -->
+		<embed src="assets/resume.pdf" type="application/pdf" title="resume" class="resume">
+		
+		<div class="resume-extra">
+			<div class="skills">
+				<h2 class="skills__header">Technical Skills</h2>
+				<ul class="skills__list">
+					<li class="skills__item">This is where I will list my technical skills</li>
+					<li class="skills__item">List things already on resume, plus additional skills</li>
+					<li class="skills__item">Bullet point format for better organization</li>
+				</ul>
+			</div>
+			<div class="interests">
+				<h2 class="interests__header">Areas of Interest</h2>
+				<ul class="interests__list">
+					<li class="interests__item">This is where I will list my areas of interest</li>
+					<li class="interests__item">Some will be in computer science, others will be in different fields</li>
+					<li class="interests__item">Bullet point format for better organization</li>
+				</ul>
+			</div>
+		</div>
+	</main>
 </body>
 </html>
