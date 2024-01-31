@@ -1,7 +1,7 @@
 /* DEBUG ONLY */
-*:hover {
+/* *:hover {
 	border: 2px solid red;
-}
+} */
 
 :root {
 	--off-white: #EDEDED;
@@ -20,8 +20,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	padding: 1vh 25vw;
-	border-top: 3px solid var(--dark-blue);
-	border-bottom: 3px solid var(--dark-blue);
+	border-top: medium solid var(--dark-blue);
+	border-bottom: medium solid var(--dark-blue);
 	margin-top: 2vh;
 }
 
@@ -134,6 +134,30 @@ body {
 
 /* Resume page styles */
 
+.qualifications {
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 1fr;
+	margin: 1em 4em;
+}
+
+.resume {
+	max-width: 40vw;
+	border: medium solid var(--dark-blue);
+}
+
+.resume__img {
+	max-width: 100%;
+}
+
+.resume-extra__header {
+	font-family: var(--sans-font);
+	color: var(--dark-blue);
+}
+
+.resume-extra__item {
+	font-family: var(--mono-font);
+}
 
 
 /* Portfolio page styles */
