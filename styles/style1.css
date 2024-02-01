@@ -136,9 +136,8 @@ body {
 
 .qualifications {
 	display: grid;
-	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr;
-	margin: 1em 4em;
+	margin: 2em 5em;
 }
 
 .resume {
@@ -162,7 +161,56 @@ body {
 
 /* Portfolio page styles */
 
+.portfolio {
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+	gap: 1em;
+	justify-items: center;
+	/* max-width: 90vw; */
+	margin: 2em auto 6em auto;
+}
 
+.portfolio__project {
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	gap: 2em;
+	align-items: center;
+	width: 60vw;
+	padding: 1em 15vw;
+}
+
+.portfolio__link {
+	color: var(--dark-blue);
+	text-decoration: none;
+}
+
+.portfolio__link:hover {
+	text-decoration: underline;
+}
+
+.portfolio__title {
+	font-family: var(--sans-font);
+	color: var(--dark-blue);
+}
+
+.portfolio__text {
+	font-family: var(--mono-font);
+}
+
+.portfolio__img-crop {
+	position: relative;
+	aspect-ratio: 1.75;
+	overflow: hidden;
+	width: 30vw;
+}
+
+.portfolio__img {
+	position: absolute;
+	top: -100%;
+	bottom: -100%;
+	width: 100%;
+	margin: auto;
+}
 
 /* Service page styles */
 
