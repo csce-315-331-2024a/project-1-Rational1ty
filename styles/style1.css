@@ -33,6 +33,17 @@ body {
 	letter-spacing: 0.1em;
 }
 
+.navbar--toggle {
+	background-color: var(--dark-blue);
+	color: var(--off-white);
+	padding: 0.5em;
+	border: none;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
 /* Homepage styles */
 
 .home {
