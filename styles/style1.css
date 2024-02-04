@@ -75,13 +75,12 @@ body {
 	border: medium solid var(--dark-blue);
 	margin: 2.5em 0;
 	transition: all 0.2s ease;
-}
 
-.embark:hover {
-	background-color: var(--off-white);
-	color: black;
-	cursor: pointer;
-	transition: all 0.2s ease;
+	&:hover {
+		background-color: var(--off-white);
+		color: black;
+		cursor: pointer;
+	}
 }
 
 .embark__text {
@@ -192,6 +191,7 @@ body {
 	color: var(--dark-blue);
 }
 
+/* TODO: add hover effect ("floating" + 3d movement) */
 .portfolio__link {
 	grid-column: 1;
 	position: relative;
