@@ -131,18 +131,22 @@ body {
 /* Resume page styles */
 
 .qualifications {
+	max-width: 80vw;
 	display: grid;
+	gap: 2em;
 	grid-template-columns: 1fr 1fr;
-	margin: 2em 5em;
+	margin: 2em auto;
 }
 
 .resume {
+	min-width: 300px;
 	max-width: 40vw;
+	aspect-ratio: 1.294;
 	border: medium solid var(--dark-blue);
 }
 
 .resume__img {
-	max-width: 100%;
+	width: 100%;
 }
 
 .resume-extra__header {
