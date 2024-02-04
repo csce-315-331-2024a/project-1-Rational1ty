@@ -261,21 +261,21 @@ body {
 /* Service page styles */
 
 .service {
-	width: 60vw;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 2em;
-	margin: 2em auto;
+	padding: 3em 20em;
+	margin: 0 auto;
 }
 
 .service__header {
 	font-family: var(--sans-font);
+	color: var(--light-red);
 	text-transform: uppercase;
 	/* letter-spacing: 0.05em; */
 }
 
 .service__text {
 	font-family: var(--mono-font);
+	color: var(--off-white);
 }
 
 .service__text--link {
@@ -283,17 +283,12 @@ body {
 }
 
 .service__acts {
-	color: var(--off-white);
-	background-color: var(--dark-blue);
 	padding: 0 2em;
+	border: medium solid var(--light-red);
 }
 
 .service__future {
 	padding: 0 2em;
-}
-
-.service--blue {
-	color: var(--dark-blue);
 }
 
 /* AI page styles */
