@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 	if (!savedStyle) return;
 
 	const style = document.getElementById('style')
-	style.setAttribute('href', savedStyle);
+	style.setAttribute('href', 'styles/' + savedStyle);
 });
 
 // set onclick event listener for toggle style button
@@ -13,8 +13,8 @@ document.getElementById('toggle').addEventListener('click', () => {
 	const style = document.getElementById('style')
 
 	const currStyle = style.getAttribute('href');
-	const newStyle = currStyle === 'style1.css' ? 'style2.css' : 'style1.css';
+	const newStyle = currStyle.endsWith('style1.css') ? 'style2.css' : 'style1.css';
 
-	style.setAttribute('href', newStyle);
+	style.setAttribute('href', 'styles/' + newStyle);
 	localStorage.setItem('mdd_style', newStyle);
 });
