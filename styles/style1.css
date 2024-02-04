@@ -15,6 +15,10 @@ body {
 	margin: 0 auto;
 }
 
+.style-transition {
+	transition: all 0.5s ease;
+}
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
@@ -237,7 +241,6 @@ body {
 .service__header {
 	font-family: var(--sans-font);
 	text-transform: uppercase;
-	/* letter-spacing: 0.05em; */
 }
 
 .service__text {
@@ -255,7 +258,6 @@ body {
 }
 
 .service__future {
-	/* border: medium solid var(--dark-blue); */
 	padding: 0 2em;
 }
 
