@@ -311,9 +311,10 @@ svg {
 
 .ai__title {
 	font-family: var(--sans-font);
-	color: black;
+	color: var(--off-white);
 }
 
 .ai__prompt {
 	font-family: var(--mono-font);
+	color: var(--off-white);
 }
