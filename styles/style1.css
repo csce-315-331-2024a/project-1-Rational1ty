@@ -72,6 +72,10 @@ body {
 	font-family: var(--mono-font);
 }
 
+.intro__text--link {
+	color: var(--dark-blue);
+}
+
 .embark {
 	background-color: var(--dark-blue);
 	color: var(--off-white);
