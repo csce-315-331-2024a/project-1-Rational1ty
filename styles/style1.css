@@ -1,6 +1,6 @@
 /* DEBUG ONLY */
 *:hover {
-	border: 1px solid red;
+	/* border: 1px solid red; */
 }
 
 :root {
@@ -151,6 +151,7 @@ body {
 .resume-extra__header {
 	font-family: var(--sans-font);
 	color: var(--dark-blue);
+	text-transform: uppercase;
 }
 
 .resume-extra__item {
@@ -210,6 +211,37 @@ body {
 
 /* Service page styles */
 
+.service {
+	width: 60vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2em;
+	margin: 2em auto;
+}
 
+.service__header {
+	font-family: var(--sans-font);
+	text-transform: uppercase;
+	/* letter-spacing: 0.05em; */
+}
+
+.service__text {
+	font-family: var(--mono-font);
+}
+
+.service__acts {
+	color: var(--off-white);
+	background-color: var(--dark-blue);
+	padding: 0 2em;
+}
+
+.service__future {
+	/* border: medium solid var(--dark-blue); */
+	padding: 0 2em;
+}
+
+.service--blue {
+	color: var(--dark-blue);
+}
 
 /* AI page styles */
