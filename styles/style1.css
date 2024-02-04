@@ -164,6 +164,7 @@ body {
 }
 
 .resume__img {
+	display: block;
 	width: 100%;
 }
 

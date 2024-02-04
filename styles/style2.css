@@ -24,13 +24,12 @@ body {
 }
 
 .navbar {
-	top: 0;
 	float: left;
 	display: flex;
 	flex-direction: column;
 	gap: 0.75em;
 	width: 7em;
-	margin: 3em;
+	margin: 4em 2em 2em 2em;
 }
 
 .navbar__link {
@@ -67,7 +66,7 @@ body {
 	grid-template-rows: repeat(2, 1fr);
 	grid-template-columns: 1fr; */
 	max-width: 60vw;
-	padding-top: 2.5em;
+	padding-top: 3em;
 	margin: 0 auto;
 }
 
@@ -172,32 +171,45 @@ body {
 /* Resume page styles */
 
 .qualifications {
-	max-width: 80vw;
 	display: grid;
-	gap: 2em;
-	grid-template-columns: 1fr 1fr;
-	margin: 2em auto;
+	grid-template-rows: 1fr 5fr;
+	max-width: 80vw;
+	max-height: 150vh;
+	margin: 0 auto;
 }
 
 .resume {
+	grid-row: 2;
 	min-width: 300px;
 	max-width: 40vw;
 	aspect-ratio: 1.294;
-	border: medium solid var(--dark-blue);
+	border: medium solid var(--light-red);
+	margin: 0 auto;
 }
 
 .resume__img {
+	display: block;
 	width: 100%;
+}
+
+.resume-extra {
+	grid-row: 1;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2em;
+	padding: 2em;
 }
 
 .resume-extra__header {
 	font-family: var(--sans-font);
-	color: var(--dark-blue);
+	color: var(--light-red);
 	text-transform: uppercase;
+	text-align: center;
 }
 
 .resume-extra__item {
 	font-family: var(--mono-font);
+	color: var(--off-white);
 }
 
 /* Portfolio page styles */
