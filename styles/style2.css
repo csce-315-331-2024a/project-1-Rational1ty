@@ -216,51 +216,46 @@ body {
 
 .portfolio {
 	width: 70vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2em;
 	margin: 2em auto 6em auto;
 }
 
 .portfolio__project {
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 2em;
-	align-items: center;
 	text-decoration: none;
-	padding: 1em 0;
 }
 
 .portfolio__description {
-	grid-column: 2;
+
 }
 
 .portfolio__title {
 	font-family: var(--sans-font);
-	color: var(--dark-blue);
+	color: var(--light-red);
+	text-align: center;
 }
 
 .portfolio__text {
 	font-family: var(--mono-font);
-	color: black;
+	color: var(--off-white);
+	text-align: center;
 }
 
 .portfolio__text--link {
-	color: var(--dark-blue);
+	color: var(--off-white);
 }
 
 /* TODO: add hover effect ("floating" + 3d movement) */
 .portfolio__link {
-	grid-column: 1;
-	position: relative;
-	aspect-ratio: 1.75;
+	display: grid;
+	place-items: center;
+	aspect-ratio: 1.6;
 	overflow: hidden;
-	width: 30vw;
 }
 
 .portfolio__img {
-	position: absolute;
-	top: -100%;
-	bottom: -100%;
 	width: 100%;
-	margin: auto;
 }
 
 /* Service page styles */
