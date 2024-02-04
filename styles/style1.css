@@ -158,34 +158,24 @@ body {
 	font-family: var(--mono-font);
 }
 
-
 /* Portfolio page styles */
 
 .portfolio {
-	display: grid;
-	grid-template-rows: repeat(3, 1fr);
-	gap: 1em;
-	justify-items: center;
-	/* max-width: 90vw; */
+	width: 70vw;
 	margin: 2em auto 6em auto;
 }
 
 .portfolio__project {
 	display: grid;
-	grid-template-columns: 2fr 5fr;
+	grid-template-columns: 1fr 2fr;
 	gap: 2em;
 	align-items: center;
-	width: 60vw;
-	padding: 1em 15vw;
-}
-
-.portfolio__link {
-	color: var(--dark-blue);
 	text-decoration: none;
+	padding: 1em 0;
 }
 
-.portfolio__link:hover {
-	text-decoration: underline;
+.portfolio__description {
+	grid-column: 2;
 }
 
 .portfolio__title {
@@ -195,9 +185,15 @@ body {
 
 .portfolio__text {
 	font-family: var(--mono-font);
+	color: black;
 }
 
-.portfolio__img-crop {
+.portfolio__text--link {
+	color: var(--dark-blue);
+}
+
+.portfolio__link {
+	grid-column: 1;
 	position: relative;
 	aspect-ratio: 1.75;
 	overflow: hidden;
