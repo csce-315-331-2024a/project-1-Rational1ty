@@ -1,14 +1,6 @@
-/* DEBUG ONLY */
-*:hover {
-	/* border: 1px solid red; */
-}
-
 :root {
 	--off-white: #EDEDED;
-	--dark-blue: #213A52;
-	/* --midnight-blue: #0A0913; */
 	--midnight-blue: #13171f;
-	/* --midnight-blue: #1F1E2C; */
 	--light-red: #FA4454;
 	--sans-font: 'Inter', system-ui, Helvetica, Arial, sans-serif;
 	--mono-font: 'Inconsolata', 'Consolas', monospace;
@@ -206,6 +198,10 @@ body {
 
 .resume-extra__item {
 	font-family: var(--mono-font);
+	color: var(--off-white);
+}
+
+.resume-extra__link {
 	color: var(--off-white);
 }
 
