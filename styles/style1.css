@@ -179,6 +179,10 @@ body {
 	font-family: var(--mono-font);
 }
 
+.resume-extra__link {
+	color: var(--dark-blue);
+}
+
 /* Portfolio page styles */
 
 .portfolio {
