@@ -69,7 +69,7 @@ body {
 	margin: 0 auto;
 }
 
-.intro__name {
+.home__name {
 	grid-row: 1;
 	grid-column: span 2;
 	font-family: var(--sans-font);
@@ -82,7 +82,7 @@ body {
 	margin: 0;
 }
 
-.intro__text {
+.home__text {
 	grid-row: 3;
 	font-family: var(--mono-font);
 	color: var(--off-white);
@@ -90,7 +90,7 @@ body {
 	margin: 1em 0;
 }
 
-.intro__text--link {
+.home__text--link {
 	color: var(--off-white);
 }
 
@@ -130,7 +130,7 @@ body {
 	margin: 0;
 }
 
-.info__headshot {
+.headshot {
 	grid-row: 2;
 	grid-column: span 2;
 	display: grid;
@@ -142,11 +142,11 @@ body {
 	margin: 0 auto;
 }
 
-.info__img {
+.headshot__img {
 	width: 110%;
 }
 
-.info__contact {
+.contact {
 	grid-row: 5;
 	grid-column: span 2;
 	display: flex;
@@ -155,7 +155,7 @@ body {
 	margin: 1em 0;
 }
 
-.info__link {
+.contact__link {
 	font-family: var(--mono-font);
 	color: var(--off-white);
 	font-style: normal;
