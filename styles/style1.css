@@ -29,17 +29,26 @@ body {
 	font-size: 0.9em;
 	color: black;
 	text-transform: uppercase;
+	text-decoration: none;
 	letter-spacing: 0.1em;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .navbar--toggle {
 	background-color: var(--dark-blue);
 	color: var(--off-white);
 	padding: 0.5em;
-	border: none;
+	border: medium solid var(--dark-blue);
+	transition: all 0.2s ease;
 
 	&:hover {
 		cursor: pointer;
+		text-decoration: none;
+		background-color: var(--off-white);
+		color: black;
 	}
 }
 

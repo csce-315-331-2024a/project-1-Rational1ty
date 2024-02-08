@@ -44,10 +44,14 @@ body {
 	width: 5em;
 	padding: 0.1em;
 	border-radius: 5px;
-	border: none;
+	border: medium solid var(--light-red);
+	transition: all 0.2s ease;
 
 	&:hover {
 		cursor: pointer;
+		text-decoration: none;
+		background-color: var(--midnight-blue);
+		color: var(--light-red);
 	}
 }
 
