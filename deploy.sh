@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+# The correct way to do this would be to use `mountpoint -q /u` but that command isn't on mingw.
 if ! [[ -d '/u' ]]; then
 	echo "fatal: Can't deploy if '/u' drive is not mounted" >&2
 	exit 1
